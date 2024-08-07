@@ -1,11 +1,14 @@
-@tailwind base;
-@tailwind components;
-@tailwind utilities;
+@import 'tailwindcss/base';
+@import 'tailwindcss/components';
+@import 'tailwindcss/utilities';
+
 
 :root {
   --foreground-rgb: 0, 0, 0;
   --background-start-rgb: 214, 219, 220;
   --background-end-rgb: 255, 255, 255;
+  --nav-hover-underline: 0, 0, 0;
+  --i: 0;
 }
 
 @media (prefers-color-scheme: dark) {
@@ -13,28 +16,43 @@
     --foreground-rgb: 255, 255, 255;
     --background-start-rgb: 0, 0, 0;
     --background-end-rgb: 0, 0, 0;
+    --nav-hover-underline: 255, 255, 255;
   }
 }
 
-body {
+body:not(.nav-link){
   color: rgb(var(--foreground-rgb));
-  background: linear-gradient(
-      to bottom,
-      transparent,
-      rgb(var(--background-end-rgb))
-    )
-    rgb(var(--background-start-rgb));
+
+}
+body::-webkit-scrollbar{
+  display: none;
 }
 
-@layer utilities {
-  .text-balance {
-    text-wrap: balance;
-  }
+
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
+
+#image-top{
+  position: relative;
+  width: 100%;
+  height: 100vh;
+  background-image: url("../images/sky.png");
+  background-position: bottom;
+  overflow: hidden;
+}
+#rest{
+  position: relative;
+  padding: 75px 100px;
+}
+
 .nav-link {
   position: relative;
   display: inline-block;
   padding-bottom: 1px;
+  color: white;
 }
 
 .nav-link::after {
@@ -42,7 +60,7 @@ body {
   position: absolute;
   width: 0;
   height: 2px;
-  background-color: #ffffff;
+  background-color: white;
   left: 50%;
   bottom: 0;
   transition: width 0.3s ease, left 0.3s ease;
@@ -52,3 +70,67 @@ body {
   width: 100%;
   left: 0;
 }
+
+#sun{
+  filter: blur(20px) brightness(1.25);
+  position: absolute;
+  right: -10vh;
+  height: auto;
+  width: 30vh;
+  top: 10vh;
+}
+#clouds{
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+  pointer-events: none;
+}
+
+#clouds img:not(#Hello){
+  position: absolute;
+  bottom: 0;
+  animation: animate calc(var(--i) * 10s) linear infinite;
+}
+
+@keyframes animate {
+  0%
+  {
+    transform: translateX(-100%);
+  }
+  100%{
+    transform: translateX(100%);
+
+  }
+  
+}
+
+
+#Hello {
+  position: absolute;
+  bottom: 0;
+  animation: fadeInScaleUp 10s ease-in forwards;
+}
+
+@keyframes fadeInScaleUp {
+  0% {
+    opacity: 0.5;
+  }
+  10% {
+    opacity: 1;
+  }
+  100%{
+    opacity: 0;
+  }
+}
+
+@media (max-width: 768px) {
+  #sun {
+    width: 15vh;
+    right: -5vh;
+    top: 20vh;
+  }
+}
+
