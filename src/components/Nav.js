@@ -6,7 +6,7 @@ export default function Nav(){
             <div className="container mx-auto py-4">
                 <div className="flex justify-center space-x-10">
                     <a href="#engagement" className="nav-link transition duration-300">
-                        Home
+                        Stack
                     </a>
                     <a href="#projekte" className="nav-link transition duration-300">
                         Projects
