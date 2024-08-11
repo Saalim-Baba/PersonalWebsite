@@ -5,6 +5,7 @@ import "./globals.css";
 import Nav from "../components/Nav"
 import Clouds from "../components/Clouds"
 import Name from "../components/Name"
+import Loader from "../components/Loader"
 import Image from 'next/image'
 import {useEffect} from "react";
 
@@ -17,9 +18,7 @@ const HomePage = () => {
 
     return (
         <>
-            <div id="loader" className={"flex flex-col justify-center"}>
-                <h1>Hello There</h1>
-            </div>
+            <Loader/>
             <div id="image-top" className={"flex flex-col justify-center"}>
                 <Nav/>
                 <Image
