@@ -9,7 +9,7 @@ export default function Name() {
     useEffect(() => {
         const handleScroll = () => {
             if (textRef.current) {
-                const value = window.scrollY / 3;
+                const value = window.scrollY / 9;
                 console.log(textRef.current.style.marginTop)
                 textRef.current.style.marginTop = `${value}vh`;
             }
@@ -21,8 +21,8 @@ export default function Name() {
     }, []);
 
     return (
-        <h1 ref={textRef} className="text-center text-[6vh] font-bold text-white mb-40">
-            SAALIM BABA
+        <h1 ref={textRef} id={"Name"} className="text-center text-[6vh] text-white mb-40">
+            Saalim Baba
         </h1>
     );
 }
