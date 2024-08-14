@@ -6,20 +6,24 @@ import React, {useState, useEffect} from "react";
 export default function Loader(){
 
     useEffect(()=>{
+        const body = document.body;
+        body.style.overflow = 'hidden';
         const loaderElement = document.getElementById('count');
         const loaderSite = document.getElementById("loader")
+        loaderElement.style.opacity = '1';
         let count = 0;
         const interval = setInterval(() => {
             loaderElement.textContent = `${count}%`;
             count++;
-
-
             if (count > 100) {
                 clearInterval(interval);
                 loaderElement.textContent = "Welcome!";
+                loaderElement.style.opacity = '0';
                 setTimeout(()=>{
                     loaderSite.style.opacity = '0';
-                },500)
+                    loaderSite.remove()
+                    body.style.overflow = 'auto';
+                },1000)
 
             }
 
