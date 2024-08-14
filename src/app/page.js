@@ -8,6 +8,7 @@ import Name from "../components/Name"
 import Loader from "../components/Loader"
 import Image from 'next/image'
 import {useEffect} from "react";
+import Box from "../components/Box"
 
 const HomePage = () => {
     useEffect(() => {
@@ -18,7 +19,6 @@ const HomePage = () => {
 
     return (
         <>
-            <Loader/>
             <div id="image-top" className={"flex flex-col justify-center"}>
                 <Nav/>
                 <Image
@@ -32,8 +32,9 @@ const HomePage = () => {
                 <Clouds/>
             </div>
             <div id="stack">
-                <p className="text-xl font-bold mb-96">Hello Everyone</p>
+                <Box/>
             </div>
+
         </>
     );
 };
