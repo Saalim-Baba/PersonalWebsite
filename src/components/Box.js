@@ -59,12 +59,12 @@ export default function Box() {
                         <div className="relative box__face box__face--right">
                             <img
                                 src="/web-icon.png"
-                                className="hidden border border-black h-[3vw] w-[3vw] absolute bottom-0 right-0 mr-[6vw] [transform:rotateY(10deg)]"
+                                className="hidden border border-black h-[3vw] w-[3vw] absolute bottom-0 right-0 mr-[6vw] "
                                 alt="web icon"
                             />
                             <img
                                 src="/info-icon.png"
-                                className="hidden border border-black h-[3vw] w-[3vw]  absolute bottom-0  mr-[-2vw] [transform:rotateY(10deg)]"
+                                className="hidden border border-black h-[3vw] w-[3vw]  absolute bottom-0  mr-[-2vw]"
                                 alt="info icon"
                             />
                         </div>
