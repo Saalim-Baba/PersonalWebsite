@@ -21,8 +21,8 @@ export default function Loader(){
                 loaderElement.style.opacity = '0';
                 setTimeout(()=>{
                     loaderSite.style.opacity = '0';
-                    loaderSite.remove()
                     body.style.overflow = 'auto';
+                    loaderSite.remove()
                 },1000)
 
             }
@@ -31,7 +31,7 @@ export default function Loader(){
     },[])
     return <>
         <div id="loader" className={"flex flex-col justify-center"}>
-            <h1 id="count"></h1>
+            <h1 className="text-[2vw]" id="count"></h1>
         </div>
 
     </>
