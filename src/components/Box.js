@@ -8,22 +8,22 @@ export default function Box() {
 
             <div className="relative flex flex-col justify-end items-center bottom-0 h-[70vh] box-container hidden_raw box_reveal">
                 <img
-                    className="circle"
+                    className="circle z-[1000]"
                     src="https://raw.githubusercontent.com/devicons/devicon/master/icons/python/python-original.svg"
                     alt="python"
                 />
                 <img
-                    className="circle"
+                    className="circle z-[1000]"
                     src="https://raw.githubusercontent.com/devicons/devicon/master/icons/javascript/javascript-original.svg"
                     alt="javascript"
                 />
                 <img
-                    className="circle"
+                    className="circle z-[1000]"
                     src="https://raw.githubusercontent.com/devicons/devicon/master/icons/mariadb/mariadb-original-wordmark.svg"
                     alt="mariadb"
                 />
                 <img
-                    className="circle"
+                    className="circle z-[1000]"
                     src="https://raw.githubusercontent.com/devicons/devicon/master/icons/tailwindcss/tailwindcss-original.svg"
                     alt="tailwindcss"
                 />
@@ -52,21 +52,10 @@ export default function Box() {
                         <div className="box__face box__face--front"></div>
                         <div id="box_lid" className="box__face box__face--top"></div>
                         <div className="box__face box__face--left flex flex-col justify-center items-center">
-                            <h1 className="mb-2 text-[1vw] text-black">My Stack</h1>
                         </div>
                         <div className="box_shadow">
                         </div>
                         <div className="relative box__face box__face--right">
-                            <img
-                                src="/web-icon.png"
-                                className="hidden border border-black h-[3vw] w-[3vw] absolute bottom-0 right-0 mr-[6vw] "
-                                alt="web icon"
-                            />
-                            <img
-                                src="/info-icon.png"
-                                className="hidden border border-black h-[3vw] w-[3vw]  absolute bottom-0  mr-[-2vw]"
-                                alt="info icon"
-                            />
                         </div>
                         <div className="box__face box__face--back"></div>
                     </div>

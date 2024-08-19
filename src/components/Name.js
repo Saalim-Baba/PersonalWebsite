@@ -9,7 +9,7 @@ export default function Name() {
     useEffect(() => {
         const handleScroll = () => {
             if (textRef.current) {
-                const value = window.scrollY / 6;
+                const value = window.scrollY / 12;
                 textRef.current.style.marginTop = `${value}vh`;
             }
         };

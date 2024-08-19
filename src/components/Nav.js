@@ -2,7 +2,7 @@ import "../app/globals.css"
 
 export default function Nav() {
     return (
-        <div className="bg-black-100 font-sans">
+        <div className="bg-black-100 font-sans fixed">
             <nav className="w-full top-0 fixed">
                 <div className="container mx-auto py-4">
                     <div className="flex justify-center space-x-10">

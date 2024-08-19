@@ -3,7 +3,9 @@
 @import 'tailwindcss/utilities';
 @import url('https://fonts.googleapis.com/css2?family=Varela+Round&display=swap');
 
-
+html {
+  scroll-behavior: smooth;
+}
 :root {
   --foreground-rgb: 0, 0, 0;
   --background-start-rgb: 214, 219, 220;
@@ -52,8 +54,7 @@ body::-webkit-scrollbar{
 .nav-link {
   position: relative;
   display: inline-block;
-  font-size: 1.1vw;
-  font-family: "Varela Round", sans-serif;
+  font-size: 1rem;
   font-style: normal;
   color: white;
 }
@@ -182,6 +183,7 @@ body {
 .box-container{
   visibility: hidden;
 }
+
 /*Box for Box.js*/
 @media (min-width:800px){
   .box-container{
@@ -189,44 +191,53 @@ body {
 
   }
   .box {
-    width: 10vw;
-    height: 9vw;
+    width: 15vw;
+    height: 12vw;
     position: relative;
-    margin-bottom: 7vw;
     transform-style: preserve-3d;
-    transform: rotateX(-20deg) rotateY(120deg);
+
+    transform: rotateX(-20deg) rotateY(100deg) rotateX(-2deg) rotateZ(4deg);
   }
 
 
   .box__face {
     position: absolute;
-    width: 100%;
-    height: 100%;
+    width: 40vw;
+    height: 40%;
     background: #d2b48c;
     border: 2px solid #9d866a;
     transform: translateZ(5vw) rotateX(0deg);
   }
 
   .box__face--top {
-    height: 10vw; /* Increased size */
+    height: 10vw;
     background: #e0cda9;
-    transform: translateY(-5vw) rotateX(90deg);
+    transform: translateY(-5vw) rotateX(90deg) rotateZ(90deg);
     transition: 0.3s;
   }
 
   .box__face--left {
     background: #e0cda9;
     transform: translateX(-5vw) rotateY(-90deg);
+
   }
 
   .box__face--front {
     background: #e0cda9;
     transform: translateX(5vw) rotateY(90deg);
+
+
   }
 
   .box__face--right {
     background: #b9a98b;
-    transform: translateX(0vw) translateZ(-5vw) rotateY(180deg);
+    transform: translateX(15vw) translateZ(-20vw) rotateY(180deg);
+    width: 10vw;
+  }
+  .box__face--back {
+    background: #b9a98b;
+    transform: translateX(15vw) translateZ(20vw) rotateY(180deg);
+    width: 10vw;
   }
 
   .box__face--right > img {
@@ -234,7 +245,6 @@ body {
   }
 
   .box__face--top.lid {
-    box-shadow: 0 2vw 20vw rgba(255, 220, 0, 0.8);
     background: #5d5444;
     opacity: 0.7;
     transition: 0.3s;
@@ -251,40 +261,51 @@ body {
     opacity: 0;
     transition: opacity 1s ease-in-out, scale 2s ease-in-out;
     padding: 1vw;
-    margin-bottom: 10vw;
+    margin-bottom: 15vw;
+    background-color: floralwhite;
+    box-shadow: -7px 6px 5px black;
+    --translate-x: 0;
+    --translate-y: 0;
+    transform: translate(var(--translate-x), var(--translate-y)) rotateX(0deg);
+    animation: levitate 2s infinite;
+  }
   }
 
   .circle.fade-out {
     opacity: 1;
     scale: 100%;
-
-  }
-  @media (max-width: 1100px) {
-    .circle{
-      margin-top: -20vw;
-    }
-    .circle.fade-out {
-      opacity: 1;
-      scale: 140%;
-
-    }
   }
 
 
-  .circle:nth-child(1) { transform: translate(-400%, 0%); }
-  .circle:nth-child(2) { transform: translate(-300%, -100%); }
-  .circle:nth-child(3) { transform: translate(-200%, -200%); }
-  .circle:nth-child(4) { transform: translate(-100%, -300%); }
-  .circle:nth-child(8) { transform: translate(400%, 0%); }
-  .circle:nth-child(7) { transform: translate(300%, -100%); }
-  .circle:nth-child(6) { transform: translate(200%, -200%); }
-  .circle:nth-child(5) { transform: translate(100%, -300%); }
+  .circle:nth-child(1) { --translate-x: -250%; --translate-y: -100%; }
+  .circle:nth-child(2) { --translate-x: -100%; --translate-y: -100%; }
+  .circle:nth-child(3) { --translate-x: 50%; --translate-y: -100%; }
+  .circle:nth-child(4) { --translate-x: 200%; --translate-y: -100%; }
+  .circle:nth-child(5) { --translate-x: -250%; --translate-y: -250%; }
+  .circle:nth-child(6) { --translate-x: -100%; --translate-y: -250%; }
+  .circle:nth-child(7) { --translate-x: 50%; --translate-y: -250%; }
+  .circle:nth-child(8) { --translate-x: 200%; --translate-y: -250%; }
 
+
+
+@keyframes levitate {
+
+  0% {
+    transform: translate(var(--translate-x), var(--translate-y)) rotateX(0deg);
+  }
+  50% {
+    transform: translate(var(--translate-x), calc(var(--translate-y) + 10%)) rotateX(0deg);
+  }
+  100% {
+    transform: translate(var(--translate-x), var(--translate-y)) rotateX(0deg);
+  }
+
+}
   .stack-cool{
     text-align: center;
   }
 
-}
+
 
 
  .stack-cool {
@@ -295,46 +316,21 @@ body {
    position: relative;
    display: inline-block;
    transform: perspective(500px) rotateX(15deg);
+   overflow: visible;
  }
 
-.stack-cool::before {
-  content: '';
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  border: 2px solid black;
-  border-radius: 10px;
-  transform: rotate(160deg);
-  box-shadow: 0px 4px 20px rgba(0, 0, 0, 0.2);
-}
-
-.stack-cool::after {
-  content: '';
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  border-top: 2px solid black;
-  border-left: 2px solid black;
-  border-radius: 10px;
-  transform: rotate(20deg);
-  box-shadow: 0px 4px 20px rgba(0, 0, 0, 0.2);
-}
 
 
 
 .footer {
   width: 100%;
   position: relative;
-  height: 200px; /* Increased height */
+  height: 200px;
 }
 
 .grass {
   background-color: green;
-  height: 30%; /* Adjusted to reduce height in favor of soil */
+  height: 30%;
   width: 100%;
   border-radius: 50% 50% 0 0;
   position: absolute;
@@ -343,53 +339,21 @@ body {
 
 .soil {
   background-color: #8B4513;
-  height: 70%; /* Increased height for soil */
+  height: 70%;
   width: 100%;
   position: absolute;
   bottom: 0;
-  background-image: radial-gradient(circle, #6B3D1F 10%, #8B4513 90%); /* Added texture using gradient */
+  background-image: radial-gradient(circle, #6B3D1F 10%, #8B4513 90%);
   display: flex;
   justify-content: center;
   align-items: center;
   flex-direction: column;
 }
 
-.links {
-  margin-top: 20px;
-  display: flex;
-  gap: 20px;
-}
-
-.links a {
-  text-decoration: none;
-  color: white;
-  font-weight: bold;
-}
 
 .rocks {
   display: flex;
   gap: 10px;
-}
-
-.rocks::before, .rocks::after {
-  content: "";
-  width: 30px;
-  height: 30px;
-  background-color: gray;
-  border-radius: 50%;
-  display: block;
-}
-
-.rocks::before {
-  width: 40px;
-  height: 40px;
-  background-color: darkgray;
-}
-
-.rocks::after {
-  width: 50px;
-  height: 50px;
-  background-color: #A9A9A9;
 }
 
 
@@ -403,7 +367,7 @@ body {
 }
 
 #blob{
-  background-color: #cbecec;
+  background-color: #dbe0e0;
   filter: blur(100vw);
   height: 23vw;
   border: solid black;
@@ -415,3 +379,45 @@ body {
   border-radius: 50%;
 
 }
+
+.cloud {
+  animation: move 6s ease infinite;
+  border-radius: 50%;
+  position: relative;
+  top: 50%;
+  left: 10%;
+  transform: translateY(-50%);
+  background: #cccccc;
+  height: 120px;
+  width: 120px;
+  box-shadow:
+          #d2d2d2 130px -30px 0 -10px,
+          #d2d2d2 50px -50px,
+          #cccccc 60px 20px,
+          #d2d2d2 120px 30px 0 -20px,
+          #cccccc 170px 10px 0 -10px;
+}
+
+@keyframes move {
+  50% {
+    transform: translateY(-20px);
+  }
+}
+@media (max-width: 1100px) {
+  .circle{
+    margin-top: -20vw;
+  }
+  .circle.fade-out {
+    opacity: 1;
+    scale: 140%;
+
+  }
+  .circle > img{
+    visibility: hidden;
+  }
+  .cloud {
+    left: 50%;
+    transform: translate(-50%, -50%);
+  }
+}
+
