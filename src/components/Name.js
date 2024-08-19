@@ -4,13 +4,12 @@ import React, { useEffect, useRef } from "react";
 import "../app/globals.css";
 
 export default function Name() {
-    const textRef = useRef(null); // Using useRef to reference the DOM element
+    const textRef = useRef(null);
 
     useEffect(() => {
         const handleScroll = () => {
             if (textRef.current) {
-                const value = window.scrollY / 9;
-                console.log(textRef.current.style.marginTop)
+                const value = window.scrollY / 6;
                 textRef.current.style.marginTop = `${value}vh`;
             }
         };
@@ -21,7 +20,7 @@ export default function Name() {
     }, []);
 
     return (
-        <h1 ref={textRef} id={"Name"} className="text-center text-[6vh] text-white mb-40">
+        <h1 ref={textRef} id={"Name"} className="text-center text-[6vh] text-white mb-40 hidden_raw">
             Saalim Baba
         </h1>
     );

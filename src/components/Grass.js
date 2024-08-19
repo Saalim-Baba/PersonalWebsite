@@ -7,9 +7,6 @@ export default function Grass(){
             <div className="soil">
                 <div className="rocks"></div>
                 <div className="links">
-                    <a href="#">Home</a>
-                    <a href="#">About</a>
-                    <a href="#">Contact</a>
                 </div>
             </div>
         </div>
