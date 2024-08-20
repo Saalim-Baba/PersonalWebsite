@@ -87,10 +87,9 @@ const HomePage = () => {
                 <div className="cloud">
                     <h1 className="text-[1vw] stack-cool z-0 mr-12 absolute left-[-50%]">
                     PROJECTS
-                </h1></div>
-
+                </h1>
+                </div>
                 <div className="relative flex flex-col justify-end items-center bottom-0 h-[70vh]">
-
                 </div>
             </div>
             <div>

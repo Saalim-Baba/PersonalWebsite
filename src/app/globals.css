@@ -216,27 +216,27 @@ body {
   }
 
   .box__face--left {
-    background: linear-gradient(#DEE4EA, #FFFFFF);
+    background: linear-gradient(#d0d7d7, #dee0ea, #ffffff);
     transform: translateX(-5vw) rotateY(-90deg);
 
   }
 
   .box__face--front {
-    background: linear-gradient(#eef3f8, #e6ebef,#F9FCFF);
+    background: linear-gradient(#1B2845, #FFFFFF);
     transform: translateX(5vw) rotateY(90deg);
 
 
   }
 
   .box__face--right {
-    background: linear-gradient(#DEE4EA, #F9FCFF);
+    background: linear-gradient(#ccd1d7, #F9FCFF);
     transform: translateX(15vw) translateZ(-20vw) rotateY(180deg);
     width: 10vw;
   }
   .box__face--back {
     border-left: solid black;
 
-    background: linear-gradient(#DEE4EA, #F9FCFF);
+    background: linear-gradient(#ccd1d7, #F9FCFF);
     transform: translateX(15vw) translateZ(20vw) rotateY(180deg);
     width: 10vw;
   }
@@ -299,7 +299,7 @@ body {
   }
   50% {
     transform: translate(var(--translate-x), calc(var(--translate-y) + 10%)) rotateY(20deg);
-    box-shadow: -7px 6px 5px #e1e1e1;
+    box-shadow: -7px 6px 5px #79c3de;
   }
   100% {
     transform: translate(var(--translate-x), var(--translate-y)) rotateY(0deg);
@@ -424,5 +424,25 @@ body {
     left: 50%;
     transform: translate(-60%, -50%);
   }
+}
+
+/* Card.js code */
+
+.card > img{
+  height: 10vw;
+  justify-content: center;
+  text-align: center;
+}
+.card{
+  background-color: white;
+  border-radius: 50px;
+  height: 30vw;
+  width: 20vw;
+  padding: 3vw;
+}
+
+.background_grad{
+  background: linear-gradient(white, #79c3de, #76bdd7, #7ac3de, white, white, white );
+  padding-top: 40vw;
 }
 
