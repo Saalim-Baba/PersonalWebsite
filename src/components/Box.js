@@ -34,8 +34,8 @@ export default function Box() {
                 />
                 <img
                     className="circle"
-                    src=""
-                    alt=""
+                    src="https://raw.githubusercontent.com/devicons/devicon/master/icons/bash/bash-original.svg"
+                    alt="bash"
                 />
                 <img
                     className="circle"
