@@ -1,5 +1,6 @@
 import React, { useEffect, useState } from "react";
 import Card from './Card';
+import data from "../app/languages.json";
 
 export default function Box() {
     const [selectedImage, setSelectedImage] = useState(null);
@@ -19,58 +20,15 @@ export default function Box() {
 
     return (
         <>
-            <div className="background_grad relative flex flex-col justify-end items-center bottom-0 h-[70vh] box-container hidden_raw box_reveal">
-                <button className="circle z-[1000]">
-                    <img
-
-                        src="https://raw.githubusercontent.com/devicons/devicon/master/icons/python/python-original.svg"
-                        alt="python"
-                    />
-                </button>
-                <button className="circle z-[1000]">
-                    <img
-
-                        src="https://raw.githubusercontent.com/devicons/devicon/master/icons/javascript/javascript-original.svg"
-                        alt="javascript"
-                    />
-                </button>
-                <button className="circle z-[1000]">
-                    <img
-                        src="https://raw.githubusercontent.com/devicons/devicon/master/icons/mariadb/mariadb-original-wordmark.svg"
-                        alt="mariadb"
-                    />
-                </button>
-                <button className="circle z-[1000]">
-                    <img
-                        src="https://raw.githubusercontent.com/devicons/devicon/master/icons/tailwindcss/tailwindcss-original.svg"
-                        alt="tailwindcss"
-                    />
-                </button>
-                <button className="circle">
-                    <img
-                        src="https://raw.githubusercontent.com/devicons/devicon/master/icons/cplusplus/cplusplus-original.svg"
-                        alt="cpp"
-                    />
-                </button>
-                <button className="circle">
-                    <img
-                        src="https://raw.githubusercontent.com/devicons/devicon/master/icons/bash/bash-original.svg"
-                        alt="bash"
-                    />
-                </button>
-                <button className="circle">
-                    <img
-                        src="https://raw.githubusercontent.com/devicons/devicon/master/icons/nextjs/nextjs-original-wordmark.svg"
-                        alt="nextjs"
-                    />
-                </button>
-                <button className="circle">
-                    <img
-
-                        src="https://raw.githubusercontent.com/devicons/devicon/master/icons/nodejs/nodejs-original-wordmark.svg"
-                        alt="nodejs"
-                    />
-                </button>
+            <div
+                className="background_grad relative flex flex-col justify-end items-center bottom-0 h-[70vh] box-container hidden_raw box_reveal">
+                <div>
+                    {data.map((item, index) => (
+                        <button key={index} className=" circle z-[900]">
+                            <img src={item.src} alt={item.alt}/>
+                        </button>
+                    ))}
+                </div>
                 <button id="box-id">
                     <div className="box absolute">
                         <div className="box__face box__face--front"></div>
@@ -81,7 +39,7 @@ export default function Box() {
                         <div className="box__face box__face--back"></div>
                     </div>
                 </button>
-                <Card selectedImage={selectedImage} />
+                <Card selectedImage={selectedImage}/>
 
             </div>
         </>

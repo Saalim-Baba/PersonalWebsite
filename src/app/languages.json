@@ -1,0 +1,50 @@
+[
+  {
+    "src": "https://raw.githubusercontent.com/devicons/devicon/master/icons/python/python-original.svg",
+    "alt": "python",
+    "description": "Python is a versatile programming language known for its ease of use and readability, commonly used in web development, data science, and automation.",
+    "title": "Python"
+  },
+  {
+    "src": "https://raw.githubusercontent.com/devicons/devicon/master/icons/javascript/javascript-original.svg",
+    "alt": "javascript",
+    "description": "JavaScript is a powerful, dynamic programming language widely used in web development to create interactive and responsive user interfaces.",
+    "title": "JavaScript"
+  },
+  {
+    "src": "https://raw.githubusercontent.com/devicons/devicon/master/icons/mariadb/mariadb-original-wordmark.svg",
+    "alt": "mariadb",
+    "description": "MariaDB is a popular open-source relational database management system, widely used as a drop-in replacement for MySQL with enhanced features and performance.",
+    "title": "MariaDB"
+  },
+  {
+    "src": "https://raw.githubusercontent.com/devicons/devicon/master/icons/tailwindcss/tailwindcss-original.svg",
+    "alt": "tailwindcss",
+    "description": "Tailwind CSS is a utility-first CSS framework for rapidly building custom designs directly in your HTML, offering flexibility and ease of use.",
+    "title": "Tailwind CSS"
+  },
+  {
+    "src": "https://raw.githubusercontent.com/devicons/devicon/master/icons/cplusplus/cplusplus-original.svg",
+    "alt": "cpp",
+    "description": "C++ is a high-performance programming language used for system/software development, game development, and in performance-critical applications.",
+    "title": "C++"
+  },
+  {
+    "src": "https://raw.githubusercontent.com/devicons/devicon/master/icons/bash/bash-original.svg",
+    "alt": "bash",
+    "description": "Bash is a Unix shell and command language, commonly used for scripting and automating tasks in Unix-based operating systems.",
+    "title": "Bash"
+  },
+  {
+    "src": "https://raw.githubusercontent.com/devicons/devicon/master/icons/nextjs/nextjs-original-wordmark.svg",
+    "alt": "nextjs",
+    "description": "Next.js is a React framework that enables server-side rendering and static website generation, making it ideal for building high-performance web applications.",
+    "title": "Next.js"
+  },
+  {
+    "src": "https://raw.githubusercontent.com/devicons/devicon/master/icons/nodejs/nodejs-original-wordmark.svg",
+    "alt": "nodejs",
+    "description": "Node.js is a JavaScript runtime built on Chrome's V8 engine, allowing developers to build fast and scalable network applications using JavaScript.",
+    "title": "Node.js"
+  }
+]
