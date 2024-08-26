@@ -11,6 +11,7 @@ import {useEffect} from "react";
 import Box from "../components/Box"
 import Grass from "../components/Grass"
 import Blob from "../components/Blob"
+import Projects from "../components/Projects"
 
 const HomePage = () => {
     useEffect(() => {
@@ -28,6 +29,7 @@ const HomePage = () => {
                     if (entry.target.classList.contains("box_reveal")){
                         if (!box_lid.classList.contains("lid")) {
                             box_lid.classList.add("lid");
+
                             circles.forEach((circle, index) => {
                                 setTimeout(() => {
                                     circle.classList.toggle("fade-out");
@@ -89,7 +91,8 @@ const HomePage = () => {
                     PROJECTS
                 </h1>
                 </div>
-                <div className="relative flex flex-col justify-end items-center bottom-0 h-[70vh]">
+                <div className="relative mb-10 flex flex-col justify-end items-center bottom-0 h-[70vh]">
+                    <Projects/>
                 </div>
             </div>
             <div>
