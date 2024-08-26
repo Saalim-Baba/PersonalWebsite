@@ -4,10 +4,17 @@ import data from "../app/languages.json";
 
 export default function Box() {
     const [selectedImage, setSelectedImage] = useState(null);
+    function getLanguageData(src) {
 
+        return data.filter(
+            function(data){ return (data.src) == src.toString() }
+        );
+    }
     useEffect(() => {
         const handleImageClick = (event) => {
-            setSelectedImage(event.target);
+            const language_entry =getLanguageData((event.target).src)
+            console.log(language_entry)
+            setSelectedImage(language_entry[0]);
         };
 
         const images = document.querySelectorAll(".circle > img");
