@@ -21,8 +21,10 @@ export default function Loader(){
                 loaderElement.style.opacity = '0';
                 setTimeout(()=>{
                     loaderSite.style.opacity = '0';
-                    body.style.overflow = 'auto';
-                    loaderSite.remove()
+                    body.style.overflow = "auto"
+                    setTimeout(()=>{
+                        loaderSite.remove()
+                    },1000)
                 },1000)
 
             }
