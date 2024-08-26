@@ -2,16 +2,15 @@ import React from 'react';
 
 export default function Card({ selectedImage }) {
     if (!selectedImage) {
-        return <div>Please click an image to see details.</div>;
+        return null
     }
-    console.log(selectedImage)
 
     return (
-        <div className="card z-[1000] flex flex-col right-20 top-0  border-black text-black border absolute">
-            <h2>{selectedImage.alt}</h2>
+        <div className="card z-[1000] flex flex-col right-20 top-0 border-black text-black border absolute">
             <img src={selectedImage.src} alt={selectedImage.alt}/>
-            <p>Details about {selectedImage.alt}</p>
-            <p>{selectedImage.description}</p>
+            <h2 className="text-center	font-bold text-[2vw] py-3">{selectedImage.title}</h2>
+            <p className="text-justify">{selectedImage.description}</p>
+            <p className="text-blue-500">Projekte hier: </p>
         </div>
     );
 }
