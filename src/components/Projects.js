@@ -13,7 +13,7 @@ export default function Projects() {
     ];
 
     return (
-        <div className="w-full grid grid-cols-12 auto-rows-auto gap-6 p-20 hidden_raw">
+        <div className="w-full grid grid-cols-12 auto-rows-auto gap-6 p-20">
             {projects.map((project, index) => (
                 <div
                     key={index}
@@ -21,7 +21,7 @@ export default function Projects() {
                         '--i': project.speed,
                         'backgroundImage': `url("/projects/${project.title}.png")`
                     }}
-                    className={`project relative overflow-hidden rounded-lg shadow-lg cursor-pointer ${project.span} ${project.gradient}`}
+                    className={`project relative rounded-lg shadow-lg cursor-pointer ${project.span} ${project.gradient}`}
                 >
                     {project.title !== "SwissHub" ? (
                         <a href={`https://github.com/Saalim-Baba/${project.title}`} target="_blank">
