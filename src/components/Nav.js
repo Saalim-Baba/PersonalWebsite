@@ -2,17 +2,17 @@ import "../app/globals.css"
 
 export default function Nav() {
     return (
-        <div className="bg-black-100 font-sans fixed">
-            <nav className="w-full top-0 fixed">
-                <div className="container mx-auto py-4">
+        <div className="font-sans text-center align-center">
+            <nav className="w-[40vw] bg-gray-200 rounded-md bg-opacity-80 fixed top-0 left-1/2 transform -translate-x-1/2 z-[1000]">
+                <div className="container py-4">
                     <div className="flex justify-center space-x-10">
                         <a href="#stack" className="nav-link transition duration-300">
                             Stack
                         </a>
-                        <a href="#projekte" className="nav-link transition duration-300">
+                        <a href="#projects" className="nav-link transition duration-300">
                             Projects
                         </a>
-                        <a href="#hobbies" className="nav-link transition duration-300">
+                        <a href="#hobbys" className="nav-link transition duration-300">
                             Hobbys
                         </a>
                         <a href="#contact" className="nav-link transition duration-300">
