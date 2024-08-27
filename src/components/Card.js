@@ -10,7 +10,6 @@ export default function Card({ selectedImage }) {
             <img src={selectedImage.src} alt={selectedImage.alt}/>
             <h2 className="text-center	font-bold text-[2vw] py-3">{selectedImage.title}</h2>
             <p className="text-justify">{selectedImage.description}</p>
-            <p className="text-blue-500">Projekte hier: </p>
         </div>
     );
 }
