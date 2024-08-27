@@ -4,9 +4,9 @@ import "../app/globals.css";
 export default function Hobbys(){
 
     const hobbys = [
-        { name: "Wandern", description: "Genieße die Natur beim Wandern.", margin: 12 },
-        { name: "Krafttraining", description: "Stärke deinen Körper im Gym.", margin: 32 },
-        { name: "Technik", description: "Löse Probleme durch Code.", margin: 52 },
+        { name: "Hiking", description: "Genieße die Natur beim Wandern.", margin: 12 },
+        { name: "Fitness", description: "Stärke deinen Körper im Gym.", margin: 32 },
+        { name: "Technical", description: "Löse Probleme durch Code.", margin: 52 },
         { name: "Skisport", description: "Erlebe den Winter auf Skiern.", margin: 72 },
     ];
 
