@@ -70,6 +70,10 @@ const HomePage = () => {
     return (
         <>
             <body>
+            <div className="small">
+                This screen is too small.
+                Desktop only for now
+            </div>
             <div id="image-top" className="flex flex-col justify-center mb-32 ">
                 <Nav/>
                 <Image
@@ -115,7 +119,6 @@ const HomePage = () => {
                 <div id="contact"></div>
             </footer>
             </body>
-
         </>
     );
 };
