@@ -12,6 +12,8 @@ import Box from "../components/Box"
 import Grass from "../components/Grass"
 import Blob from "../components/Blob"
 import Projects from "../components/Projects"
+import Hobbys from "../components/Hobbys"
+
 
 const HomePage = () => {
     useEffect(() => {
@@ -79,9 +81,9 @@ const HomePage = () => {
                 <Name/>
                 <Clouds/>
             </div>
-            <div id="stack" className="mt-2">
-                <div className='cloud'>
-                    <h1 className="text-black absolute  stack-cool">STACK</h1>
+            <div id="stack" className="mt-2 hidden_raw">
+                <div className='cloud '>
+                    <h1 className="text-black absolute stack-cool">STACK</h1>
                 </div>
                     <Box/>
             </div>
@@ -91,14 +93,25 @@ const HomePage = () => {
                     PROJECTS
                 </h1>
                 </div>
-                <div className="relative mb-10 flex flex-col justify-end items-center bottom-0 h-[70vh]">
+                <div className="relative mb-5 flex flex-col justify-end items-center bottom-0 h-[70vh]">
                     <Projects/>
                 </div>
             </div>
-            <div>
-                <Grass/>
+            <div id="hobbys" className="mt-72 hidden_raw">
+                <div className="cloud">
+                    <h1 className="text-[1vw] stack-cool z-0  absolute left-[-25%]">
+                        HOBBYS
+                    </h1>
+                </div>
+                <div className="relative mb-10 items-center bottom-0 h-[70vh]">
+                    <Hobbys/>
+                </div>
             </div>
-
+            <footer id="contact">
+                <div className="bottom-0">
+                    <Grass/>
+                </div>
+            </footer>
         </>
     );
 };
