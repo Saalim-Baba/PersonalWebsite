@@ -69,6 +69,7 @@ const HomePage = () => {
 
     return (
         <>
+            <body>
             <div id="image-top" className="flex flex-col justify-center mb-32 ">
                 <Nav/>
                 <Image
@@ -107,11 +108,14 @@ const HomePage = () => {
                     <Hobbys/>
                 </div>
             </div>
-            <footer id="contact">
+            <footer >
                 <div className="bottom-0">
                     <Grass/>
                 </div>
+                <div id="contact"></div>
             </footer>
+            </body>
+
         </>
     );
 };

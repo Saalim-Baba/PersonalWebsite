@@ -3,10 +3,13 @@
 @import 'tailwindcss/utilities';
 @import url('https://fonts.googleapis.com/css2?family=Varela+Round&display=swap');
 
-html {
+html{
   scroll-behavior: smooth;
+}
+:not(#contact footer .grass_container) {
   scroll-padding-top: 10vw;
 }
+
 :root {
   --foreground-rgb: 0, 0, 0;
   --background-start-rgb: 214, 219, 220;
@@ -26,9 +29,8 @@ html {
   }
 }
 
-body:not(.nav-link){
+body:not(.nav-link ){
   color: rgb(var(--foreground-rgb));
-
 }
 body::-webkit-scrollbar{
   display: none;
@@ -457,7 +459,6 @@ body {
   transform-style: preserve-3d;
   transition: transform 0.7s;
   transform: rotateY(20deg) rotateX(10deg);
-  cursor: pointer;
   animation: levitate_2 4s infinite;
   display: flex;
   flex-direction: column;
@@ -551,7 +552,7 @@ body {
 
   }
   50%{
-    height: calc(var(--gust) * 0.8vh);
+    transform: translateY(calc(var(--gust) * 0.9%));
   }
 }
 
@@ -582,3 +583,21 @@ body {
   z-index: 100;
 }
 
+#contact_info{
+  height: 30vw;
+  width: 30vw;
+  background-color: rgba(255, 255, 255, 0.4);
+  border: dashed darkgreen 5px;
+  bottom: 15vw;
+  left: 10vw;
+  position: absolute;
+  z-index: 100;
+  justify-content: center;
+  align-items: center;
+
+  display: flex;
+  flex-direction: column;
+}
+#contact_info > a{
+  position: relative;
+}
