@@ -2,33 +2,23 @@ import "../app/globals.css";
 
 export default function Projects() {
     const projects = [
-        { title: "SwissHub", gradient: "bg-gradient-to-r from-blue-400 to-blue-100", span: "col-span-3 row-span-8" },
-        { title: "RecipesFullStack", gradient: "bg-gradient-to-r from-blue-400 to-blue-100", span: "col-span-3 row-span-7"},
-        { title: "Bankgeheimnis", gradient: "bg-gradient-to-r from-blue-400 to-blue-100", span: "col-span-3 row-span-7" },
-        { title: "BibliothekBackend", gradient: "bg-gradient-to-r from-blue-400 to-blue-100", span: "col-span-3 row-span-8" },
-        { title: "OOP_ShopSystem", gradient: "bg-gradient-to-r from-blue-400 to-blue-100", span: "col-span-3 row-span-8" },
-        { title: "ETH-KI-Wettbewerb", gradient: "bg-gradient-to-r from-blue-400 to-blue-100", span: "col-span-3 row-span-9" },
-        { title: "Hangman", gradient: "bg-gradient-to-r from-blue-400 to-blue-100", span: "col-span-3 row-span-8" },
-        { title: "DiscordMusicBot", gradient: "bg-gradient-to-r from-blue-400 to-blue-100", span: "col-span-3 row-span-8" },
+        { title: "SwissHub", gradient: "bg-gradient-to-r from-blue-400 to-blue-100", span: "col-span-3 row-span-8", speed:2.5},
+        { title: "RecipesFullStack", gradient: "bg-gradient-to-r from-blue-400 to-blue-100", span: "col-span-3 row-span-7",speed:4.5},
+        { title: "Bankgeheimnis", gradient: "bg-gradient-to-r from-blue-400 to-blue-100", span: "col-span-3 row-span-7", speed:3},
+        { title: "BibliothekBackend", gradient: "bg-gradient-to-r from-blue-400 to-blue-100", span: "col-span-3 row-span-8", speed:3 },
+        { title: "OOP_ShopSystem", gradient: "bg-gradient-to-r from-blue-400 to-blue-100", span: "col-span-3 row-span-8", speed:3.2 },
+        { title: "ETH-KI-Wettbewerb", gradient: "bg-gradient-to-r from-blue-400 to-blue-100", span: "col-span-3 row-span-9", speed:3.5 },
+        { title: "Hangman", gradient: "bg-gradient-to-r from-blue-400 to-blue-100", span: "col-span-3 row-span-8", speed:3.7 },
+        { title: "DiscordMusicBot", gradient: "bg-gradient-to-r from-blue-400 to-blue-100", span: "col-span-3 row-span-8", speed:4.5 },
     ];
-    let i = 2
-    function getVar(){
-        if (i > 4) {
-            i=2.5
-        }else{
-            i++
-        }
 
-
-        return i
-    }
     return (
         <div className="w-full grid grid-cols-12 auto-rows-auto gap-6 p-20 hidden_raw">
             {projects.map((project, index) => (
                 <div
                     key={index}
                     style={{
-                        '--i': getVar(),
+                        '--i': project.speed,
                         'backgroundImage': `url("/projects/${project.title}.png")`
                     }}
                     className={`project relative overflow-hidden rounded-lg shadow-lg cursor-pointer ${project.span} ${project.gradient}`}

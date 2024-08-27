@@ -22,14 +22,12 @@ export default function Hobbys(){
                 >
                     <div style={{ marginLeft: `${hobby.margin}vw` }}>
                         <div className="thd_card">
-                            <div className="face front ">
+                            <div className="face front">
                                 <p>{hobby.name}</p>
                             </div>
-                            <div className="face back">
-                                <p>{hobby.description}</p>
+                            <div className="face back" style={{'backgroundImage': `url("/hobbys/${hobby.name}.png")`}}>
                             </div>
                         </div>
-
                     </div>
                 </div>
             ))}
