@@ -359,8 +359,12 @@ body {
   font-weight: bold;
   width: 100%;
   height: 5vw;
+  font-size: 1.5vw;
   color: white;
   background-color: darkred;
+  animation: lively 2s infinite;
+  text-decoration: underline 0.15em rgba(0, 0, 0, 0);
+  transition: text-decoration-color 300ms;
 }
 
 .face {
@@ -389,7 +393,6 @@ body {
   transition: transform 1s;
   box-shadow: -10px 10px 10px #8d8a8a;
   background-size: cover;
-
 }
 
 .thd_card:hover .front {
@@ -411,6 +414,14 @@ body {
   }
 }
 
+@keyframes lively {
+  0%,100%{
+    text-decoration-color: rgba(0, 0, 0, 0);
+  }
+  50%{
+    text-decoration-color: rgb(255, 255, 255);
+  }
+}
 
 /** swaying grass hills **/
 
