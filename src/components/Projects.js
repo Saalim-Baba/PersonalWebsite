@@ -2,14 +2,14 @@ import "../app/globals.css";
 
 export default function Projects() {
     const projects = [
-        { title: "SwissHub", gradient: "bg-gradient-to-r from-blue-400 to-blue-100", span: "col-span-3 row-span-8", speed:2.5},
-        { title: "RecipesFullStack", gradient: "bg-gradient-to-r from-blue-400 to-blue-100", span: "col-span-3 row-span-7",speed:4.5},
-        { title: "Bankgeheimnis", gradient: "bg-gradient-to-r from-blue-400 to-blue-100", span: "col-span-3 row-span-7", speed:3},
-        { title: "BibliothekBackend", gradient: "bg-gradient-to-r from-blue-400 to-blue-100", span: "col-span-3 row-span-8", speed:3 },
-        { title: "OOP_ShopSystem", gradient: "bg-gradient-to-r from-blue-400 to-blue-100", span: "col-span-3 row-span-8", speed:3.2 },
-        { title: "ETH-KI-Wettbewerb", gradient: "bg-gradient-to-r from-blue-400 to-blue-100", span: "col-span-3 row-span-9", speed:3.5 },
-        { title: "Hangman", gradient: "bg-gradient-to-r from-blue-400 to-blue-100", span: "col-span-3 row-span-8", speed:3.7 },
-        { title: "DiscordMusicBot", gradient: "bg-gradient-to-r from-blue-400 to-blue-100", span: "col-span-3 row-span-8", speed:4.5 },
+        { title: "SwissHub", span: "col-span-3 row-span-8", speed:2.5},
+        { title: "RecipesFullStack",  span: "col-span-3 row-span-7",speed:4.5},
+        { title: "Bankgeheimnis", span: "col-span-3 row-span-7", speed:3},
+        { title: "BibliothekBackend", span: "col-span-3 row-span-8", speed:3 },
+        { title: "OOP_ShopSystem",  span: "col-span-3 row-span-8", speed:3.2 },
+        { title: "ETH-KI-Wettbewerb", span: "col-span-3 row-span-9", speed:3.5 },
+        { title: "Hangman", span: "col-span-3 row-span-8", speed:3.7 },
+        { title: "DiscordMusicBot", span: "col-span-3 row-span-8", speed:4.5 },
     ];
 
     return (
@@ -21,7 +21,7 @@ export default function Projects() {
                         '--i': project.speed,
                         'backgroundImage': `url("/projects/${project.title}.png")`
                     }}
-                    className={`project relative rounded-lg shadow-lg cursor-pointer ${project.span} ${project.gradient}`}
+                    className={`project relative rounded-lg shadow-lg cursor-pointer ${project.span}`}
                 >
                     {project.title !== "SwissHub" ? (
                         <a href={`https://github.com/Saalim-Baba/${project.title}`} target="_blank">
@@ -37,9 +37,11 @@ export default function Projects() {
                             <h3 className="text-white text-xl font-semibold text-center">
                                 {project.title}
                             </h3>
+                            <div className="z-[-10] absolute">Im hidden</div>
                         </div>
                         </a>
                     )}
+
                 </div>
             ))}
         </div>

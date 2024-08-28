@@ -98,7 +98,7 @@ const HomePage = () => {
                     PROJECTS
                 </h1>
                 </div>
-                <div className="relative mb-5 flex flex-col justify-end items-center bottom-0 h-[70vh]">
+                <div className="relative mb-5 justify-end items-center bottom-0 h-[70vh]">
                     <Projects/>
                 </div>
             </div>
