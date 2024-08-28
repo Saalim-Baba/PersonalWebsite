@@ -7,6 +7,7 @@ Welcome to my first Next.js project! This is a personal website I'm developing t
 ## Project Status 🚧
 
 This website is **still in development** and currently **not responsive**.
+
 Things next on the list:
 1. Make mobile friendly
 2. Documentation
