@@ -359,7 +359,7 @@ body {
   transition: transform 0.7s;
   animation: levitate_2 4s infinite;
   display: flex;
-  flex-direction: column;
+  flex-direction: column; 
   justify-content: center;
   align-items: center;
 }
@@ -429,7 +429,6 @@ body {
 
 
 .hobby > div:nth-child(1) > div > .thd_card > .front{
-  flex-wrap: wrap;
   box-shadow: 10px 10px 10px #8d8a8a;
 }
 .hobby > div:nth-child(2) > div > .thd_card > .front{
@@ -634,6 +633,7 @@ Card that has icons on it for contacts
     right: -5vh;
     top: 10vh;
   }
+
   /**
   body * {
     display: none;
