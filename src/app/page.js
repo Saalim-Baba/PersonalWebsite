@@ -70,6 +70,7 @@ const HomePage = () => {
     return (
         <>
             <body>
+            <Loader/>
             <div id="image-top" className="flex flex-col justify-center mb-32 ">
                 <Nav/>
                 <Image
@@ -104,7 +105,7 @@ const HomePage = () => {
                         HOBBYS
                     </h1>
                 </div>
-                <div className="relative mb-10 items-center bottom-0 h-[70vh]">
+                <div className="relative mb-10 items-center right-10 bottom-0 h-[70vh]">
                     <Hobbys/>
                 </div>
             </div>
