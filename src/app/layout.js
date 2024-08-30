@@ -1,6 +1,9 @@
 export const metadata = {
   title: 'Home',
   description: 'Welcome',
+  icons: {
+    icon: '/face.png',
+  },
 }
 
 export default function RootLayout({ children }) {
