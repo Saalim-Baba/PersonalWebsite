@@ -7,7 +7,7 @@ export default function Box() {
     function getLanguageData(src) {
 
         return data.filter(
-            function(data){ return (data.src) == src.toString() }
+            function(data){ return (data.src) === src.toString() }
         );
     }
     useEffect(() => {

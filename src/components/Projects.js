@@ -3,12 +3,12 @@ import "../app/globals.css";
 export default function Projects() {
     const projects = [
         { title: "SwissHub", span: "col-span-3 row-span-8", speed:2.5},
-        { title: "RecipesFullStack",  span: "col-span-3 row-span-7",speed:3},
+        { title: "RecipesFullStack",  span: "col-span-3 row-span-7 light_bg",speed:3},
         { title: "Bankgeheimnis", span: "col-span-3 row-span-7", speed:2.5},
         { title: "BibliothekBackend", span: "col-span-3 row-span-8", speed:3},
-        { title: "OOP_ShopSystem",  span: "col-span-3 row-span-8", speed:2.5 },
-        { title: "ETH-KI-Wettbewerb", span: "col-span-3 row-span-9", speed:4.5 },
-        { title: "Hangman", span: "col-span-3 row-span-8", speed:3 },
+        { title: "OOP_ShopSystem",  span: "col-span-3 row-span-8 light_bg", speed:2.5 },
+        { title: "ETH-KI-Wettbewerb", span: "col-span-3 row-span-9 light_bg", speed:4.5 },
+        { title: "Hangman", span: "col-span-3 row-span-8 light_bg", speed:3 },
         { title: "DiscordMusicBot", span: "col-span-3 row-span-8", speed:2.5 },
     ];
 
@@ -19,7 +19,7 @@ export default function Projects() {
                     key={index}
                     style={{
                         '--i': project.speed,
-                        'backgroundImage': `url("/projects/${project.title}.png")`
+                        'backgroundImage': `url("/projects/${project.title}.webp")`
                     }}
                     className={`project relative rounded-lg shadow-lg cursor-pointer ${project.span}`}
                 >
