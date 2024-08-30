@@ -8,6 +8,12 @@ Welcome to my first Next.js project! This is a personal website I'm developing t
 
 This website is **still in development** and currently **not responsive**.
 
+Things next on the list:
+1. Make mobile friendly
+2. Documentation
+3. Add some more animation
+4. Fix some bugs that disturb the experience 
+
 ## Getting Started 🛠
 
 To run this project locally:
