@@ -154,7 +154,7 @@ body {
   background-size: 600% 100%;
   animation: gradient 16s linear infinite;
   animation-direction: reverse;
-  z-index:1000;
+  z-index:10000;
   display: flex;
   transition: opacity 1s ease-out;
   opacity: 1;
