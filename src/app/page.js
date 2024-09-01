@@ -87,12 +87,12 @@ const HomePage = () => {
                 <Clouds/>
             </div>
             <div id="stack" className="mt-36 hidden_raw">
-                <div className='cloud left-1/2 transform -translate-x-1/2'>
+                <div className='cloud'>
                     <h1 className="text-black absolute stack-cool">STACK</h1>
                 </div>
                     <Box/>
             </div>
-            <div id="projects" className="mt-72">
+            <div id="projects" className="">
                 <div className="cloud hidden_raw">
                     <h1 className="text-[1vw] stack-cool z-0 mr-12 absolute left-[-50%]">
                     PROJECTS
