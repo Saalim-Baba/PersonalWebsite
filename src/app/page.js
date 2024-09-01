@@ -19,10 +19,13 @@ const HomePage = () => {
     useEffect(() => {
         const circles = document.querySelectorAll(".circle");
         const box_lid = document.getElementById("box_lid");
+        let url = window.location
 
-        window.onbeforeunload = function () {
-            window.scrollTo(0, 0);
-        };
+        window.addEventListener('beforeunload', function(event) {
+            const baseUrl = window.location.protocol + '//' + window.location.host;
+            history.replaceState(null, document.title, baseUrl);
+            window.scroll(0,0)
+        });
 
         const observer = new IntersectionObserver((entries) => {
             entries.forEach((entry) => {
@@ -70,7 +73,6 @@ const HomePage = () => {
     return (
         <>
             <body>
-            <Loader/>
             <div id="image-top" className="flex flex-col justify-center mb-32 ">
                 <Nav/>
                 <Image
