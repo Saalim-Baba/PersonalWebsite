@@ -1,4 +1,5 @@
 import "../app/globals.css"
+import "../app/css/footer.css"
 import Image from "next/image";
 
 export default function Grass(){
