@@ -4,10 +4,10 @@ import "../app/globals.css";
 export default function Hobbys(){
 
     const hobbys = [
-        { name: "Hiking", description: "Genieße die Natur beim Wandern.", margin: 15 },
-        { name: "Fitness", description: "Stärke deinen Körper im Gym.", margin:35  },
-        { name: "Technical", description: "Löse Probleme durch Code.", margin: 55},
-        { name: "Skisport", description: "Erlebe den Winter auf Skiern.", margin:75},
+        { name: "Hiking", description: "Genieße die Natur beim Wandern." },
+        { name: "Fitness", description: "Stärke deinen Körper im Gym."  },
+        { name: "Technical", description: "Löse Probleme durch Code."},
+        { name: "Skisport", description: "Erlebe den Winter auf Skiern."},
     ];
 
 
@@ -20,7 +20,7 @@ export default function Hobbys(){
                     key={index}
                     className="mt-20"
                 >
-                    <div style={{ marginLeft: `${hobby.margin}vw`}}>
+                    <div>
                         <div className="thd_card">
                             <div className="face front">
                                 <p>{hobby.name}</p>
