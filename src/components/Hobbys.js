@@ -14,7 +14,7 @@ export default function Hobbys(){
 
     return (
         <>
-        <div className="hobby-container w-full grid grid-cols-4 gap-y-7 gap-x-4 ">
+        <div className="hobby-containerw-full grid grid-cols-4 auto-rows-auto gap-y-7 gap-x-4 p-20 ">
             {hobbys.map((hobby, index) => (
                 <div
                     key={index}
