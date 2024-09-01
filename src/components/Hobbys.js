@@ -14,11 +14,11 @@ export default function Hobbys(){
 
     return (
         <>
-        <div className="hobby-containerw-full grid grid-cols-4 auto-rows-auto gap-y-7 gap-x-4 p-20 ">
+        <div className="hobby-container w-full grid grid-cols-4 auto-rows-auto gap-y-7 gap-x-4 p-20 ">
             {hobbys.map((hobby, index) => (
                 <div
                     key={index}
-                    className="mt-20 hobby"
+                    className="hobby"
                 >
                     <div>
                         <div className="thd_card">
