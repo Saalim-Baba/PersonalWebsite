@@ -1,4 +1,5 @@
 import "../app/globals.css";
+import "../app/css/projects.css"
 
 export default function Projects() {
     const projects = [
@@ -13,7 +14,7 @@ export default function Projects() {
     ];
 
     return (
-        <div className="w-full grid grid-cols-12 auto-rows-auto gap-y-7 gap-x-4 p-20">
+        <div className=" w-full grid grid-cols-12 auto-rows-auto gap-y-7 gap-x-4 p-20">
             {projects.map((project, index) => (
                 <div
                     key={index}
