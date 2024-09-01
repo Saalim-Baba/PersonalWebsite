@@ -1,0 +1,109 @@
+.hobby_container{
+    place-self: center;
+    justify-self: center;
+    justify-content: center;
+}
+
+.thd_card {
+    position: absolute;
+    width: 250px;
+    height: 400px;
+    transform-style: preserve-3d;
+    transition: transform 0.7s;
+    animation: levitate_2 4s infinite;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+
+
+.thd_card > div > p{
+    padding: 1vw;
+    text-align: center;
+    font-weight: bold;
+    width: 100%;
+    height: 60px;
+    font-size: 25px;
+    color: white;
+    background-color: darkred;
+    animation: lively 2s infinite;
+    text-decoration: underline 0.15em rgba(0, 0, 0, 0);
+    transition: text-decoration-color 300ms;
+}
+
+.face {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background: rgb(236, 233, 233);
+    border: solid 1px;
+    backface-visibility: hidden;
+    border-radius: 1vw;
+}
+
+.front {
+    transform: rotateY(0deg);
+    transition: transform 1s;
+    text-align: center;
+    display: flex;
+    align-items: center;
+    box-shadow: -10px 10px 10px #8d8a8a;
+
+    justify-content: center;
+
+}
+
+.back {
+    transform: rotateY(180deg);
+    transition: transform 1s;
+    box-shadow: -10px 10px 10px #8d8a8a;
+    background-size: cover;
+}
+
+.thd_card:hover .front {
+    transform: rotateY(-180deg) rotateX(0deg);
+    transition-duration: 1.2s;
+}
+
+.thd_card:hover .back {
+    transform: rotateY(0deg) rotateX(0deg);
+    transition-duration: 1.2s;
+}
+
+
+@keyframes lively {
+    0%,100%{
+        text-decoration-color: rgba(0, 0, 0, 0);
+    }
+    50%{
+        text-decoration-color: rgb(255, 255, 255);
+    }
+}
+
+
+.hobby > div:nth-child(1) > div > .thd_card > .front{
+    box-shadow: 10px 10px 10px #8d8a8a;
+}
+
+.hobby > div:nth-child(2) > div > .thd_card > .front{
+
+    box-shadow: 10px 10px 10px #8d8a8a;
+}
+
+@media (max-width: 1200px) {
+    .hobby{
+        grid-column: span 2;
+        margin-bottom: 10px;
+
+    }
+    #hobbys{
+        height: 150vh;
+    }
+
+}
+@media (max-width: 768px) {
+
+
+}

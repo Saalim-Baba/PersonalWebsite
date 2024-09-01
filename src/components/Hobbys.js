@@ -1,5 +1,5 @@
 import "../app/globals.css";
-
+import "../app/css/hobbys.css"
 
 export default function Hobbys(){
 
@@ -14,11 +14,11 @@ export default function Hobbys(){
 
     return (
         <>
-        <div className=" hobby">
+        <div className="hobby-container w-full grid grid-cols-4 gap-y-7 gap-x-4 ">
             {hobbys.map((hobby, index) => (
                 <div
                     key={index}
-                    className="mt-20"
+                    className="mt-20 hobby"
                 >
                     <div>
                         <div className="thd_card">
