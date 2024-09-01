@@ -86,8 +86,8 @@ const HomePage = () => {
                 <Name/>
                 <Clouds/>
             </div>
-            <div id="stack" className="mt-2 hidden_raw">
-                <div className='cloud '>
+            <div id="stack" className="mt-36 hidden_raw">
+                <div className='cloud left-1/2 transform -translate-x-1/2'>
                     <h1 className="text-black absolute stack-cool">STACK</h1>
                 </div>
                     <Box/>
@@ -102,18 +102,18 @@ const HomePage = () => {
                     <Projects/>
                 </div>
             </div>
-            <div id="hobbys" className="mt-72 hidden_raw">
+            <div id="hobbys" className=" hidden_raw">
                 <div className="cloud">
-                    <h1 className="text-[1vw]  stack-cool z-0  absolute left-[-25%]">
+                    <h1 className="text-[1vw] stack-cool z-0 absolute left-[-25%]">
                         HOBBYS
                     </h1>
                 </div>
-                <div className="relative mb-10 items-center right-10 bottom-0 h-[70vh]">
+                <div className="relative mb-10 items-center bottom-0 h-[70vh]">
                     <Hobbys/>
                 </div>
             </div>
             <footer >
-                <div className="bottom-0">
+                <div className="mt-72 relative bottom-0 h-[100vh]">
                     <Grass/>
                 </div>
                 <div id="contact"></div>
