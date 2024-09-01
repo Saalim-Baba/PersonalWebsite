@@ -73,6 +73,7 @@ const HomePage = () => {
     return (
         <>
             <body>
+            <Loader/>
             <div id="image-top" className="flex flex-col justify-center mb-32 ">
                 <Nav/>
                 <Image
