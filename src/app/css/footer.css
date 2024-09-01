@@ -1,0 +1,82 @@
+
+
+.grass_container {
+    height: 100vh;
+    background: linear-gradient(white, white, #76bdd7, #76bdd7,#76bdd7, #7ac3de, #e0ffff);
+    width: 100%;
+    position: relative;
+    overflow: hidden;
+}
+
+.grass {
+    background: linear-gradient(to top, #006400, #228B22 );
+    border-radius: 50% / 100%;
+    border-bottom-left-radius: 0;
+    border-bottom-right-radius: 0;
+    position: absolute;
+    bottom: 10vw;
+    z-index: 2;
+    border: solid 2px darkgreen ;
+    animation: wind infinite 10s ;
+}
+@keyframes wind {
+    0%,100%{
+
+    }
+    50%{
+        transform: translateY(calc(var(--gust) * 0.9%));
+    }
+}
+
+
+.soil {
+    background-color: #8B4513;
+    height: 10vw;
+    width: 100%;
+    position: absolute;
+    bottom: 0;
+    background-image: radial-gradient(circle, #6B3D1F 20%, #8B4513 80%);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    z-index: 90;
+}
+.rocks::after{
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 40%;
+    width: 100%;
+    background: linear-gradient(to top, #006400, #228B22 );
+    border-top: dashed 2px green;
+    border-bottom-left-radius: 50% 20%;
+    border-bottom-right-radius: 50% 20%;
+    z-index: 100;
+}
+/**
+Card that has icons on it for contacts
+**/
+#contact_info{
+    height: 350px;
+    width: 350px;
+    background-color: rgba(255, 255, 255, 0.4);
+    border: dashed darkgreen 5px;
+    bottom: 15vw;
+    left: 10vw;
+    position: absolute;
+    z-index: 100;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+;
+}
+#contact_info > a{
+    position: relative;
+    transition: 1s  ease-in-out
+}
+#contact_info > a:hover{
+    transform: scale(110%);
+}
