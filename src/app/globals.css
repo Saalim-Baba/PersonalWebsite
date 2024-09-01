@@ -150,7 +150,7 @@ body {
   width: 100%;
   height: 100%;
   position: fixed;
-  background: linear-gradient(#42a3d1, #42a3d1, #59aed7, #42a3d1, #ffffff);
+  background: linear-gradient(#42a3d1, #42a3d1, #42a3d1, #42a3d1, #ffffff);
   background-size: 600% 100%;
   animation: gradient 16s linear infinite;
   animation-direction: reverse;
@@ -430,7 +430,7 @@ body {
 }
 @media (max-width: 800px) {
   .cloud{
-    left: 20%;
+    left: 5%;
   }
 
   #clouds img{

@@ -3,20 +3,22 @@
     width: 100%;
     margin: 0;
     padding: 0;
+
 }
 
 .thd_card {
-    position: absolute;
+    position: relative;
     width: 250px;
     height: 400px;
+    margin: 0 auto;
     transform-style: preserve-3d;
     transition: transform 0.7s;
     animation: levitate_2 4s infinite;
     display: flex;
     flex-direction: column;
     justify-content: center;
-
 }
+
 
 .hobby{
     width: 100%;
@@ -118,13 +120,13 @@
 @media (max-width: 710px) {
 
     .hobby{
-        grid-column: span 3;
+        grid-column: span 4;
         justify-content: center;
         margin-top: 0;
-
     }
     #hobbys{
         height: 300vh;
+
     }
 
     .thd_card{
@@ -133,3 +135,4 @@
     }
 
 }
+

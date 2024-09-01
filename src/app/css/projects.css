@@ -60,9 +60,9 @@
     }
 
     #projects > div > h1{
-        font-size: 10vw;
-        left: 0;
-        top: 15px;
+        font-size: 13vw;
+        left: 12px;
+        top: 30px;
     }
 }
 
