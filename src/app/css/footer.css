@@ -1,8 +1,8 @@
 
 
 .grass_container {
-    height: 100vh;
-    background: linear-gradient(white, white, #76bdd7, #76bdd7,#76bdd7, #7ac3de, #e0ffff);
+    height: 120vh;
+    background: linear-gradient(white,  #76bdd7, #76bdd7,#76bdd7, #7ac3de, #e0ffff);
     width: 100%;
     position: relative;
     overflow: hidden;
@@ -31,7 +31,7 @@
 
 .soil {
     background-color: #8B4513;
-    height: 10vw;
+    height: 150px;
     width: 100%;
     position: absolute;
     bottom: 0;
@@ -79,4 +79,23 @@ Card that has icons on it for contacts
 }
 #contact_info > a:hover{
     transform: scale(110%);
+}
+@media (max-width: 1050px) {
+    #contact_info{
+        margin-bottom: 70vh;
+        justify-content: center;
+    }
+    .grass_container{
+        height: 150vh;
+    }
+}
+@media (max-width: 710px) {
+    #contact_info{
+        margin-bottom: 70vh;
+        justify-content: center;
+    }
+    .grass_container{
+        display: flex;
+        height: 150vh;
+    }
 }

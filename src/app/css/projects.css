@@ -61,6 +61,11 @@
     .cloud{
         top: 0;
     }
+
+    #projects > div > h1{
+        font-size: 10vw;
+        left: 0%
+    }
 }
 
 
@@ -81,3 +86,4 @@
 #projects{
     background: linear-gradient(white, white, #7ac3de, #7ac3de, #7ac3de, white , white );
 }
+
