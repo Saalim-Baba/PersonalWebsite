@@ -10,8 +10,9 @@ This website is **still in development**.
 
 Things next on the list:
 1. Documentation
-2. Make some slight corrections like centering stuff, but not relevant at this point
-3. Add some more animation
+2. Clean code
+3. Make some slight corrections like centering stuff, but not relevant at this point
+4. Add some more animation
 
 ## Getting Started 🛠
 
