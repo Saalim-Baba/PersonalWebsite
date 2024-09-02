@@ -14,6 +14,7 @@ import Blob from "../components/Blob"
 import Projects from "../components/Projects"
 import Hobbys from "../components/Hobbys"
 import Carousel from "../components/Carousel"
+import "../app/css/cloud.css"
 
 const HomePage = () => {
     useEffect(() => {

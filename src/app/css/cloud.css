@@ -16,7 +16,6 @@
 
 @media (max-width: 800px) {
     .cloud{
-        left: 5%;
         margin-top: 60vw;
 
     }
@@ -24,5 +23,8 @@
         position: absolute;
         bottom: 0;
         animation: animate calc(var(--i) * 2s) linear infinite;
+    }
+    #hobbys > .cloud{
+        transform: translateX(50%);
     }
 }
