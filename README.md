@@ -9,9 +9,9 @@ Welcome to my first Next.js project! This is a personal website I'm developing t
 This website is **still in development**.
 
 Things next on the list:
-2. Documentation
-3. Make some slight corrections like centering stuff, but not relevant at this point
-4. Add some more animation
+1. Documentation
+2. Make some slight corrections like centering stuff, but not relevant at this point
+3. Add some more animation
 
 ## Getting Started 🛠
 
