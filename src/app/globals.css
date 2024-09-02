@@ -262,21 +262,7 @@ body {
   translate: -50% -50%;
   border-radius: 50%;
 
-}.cloud {
-   margin-top: 30vw;
-   border-radius: 50%;
-   position: relative;
-   left: 10%;
-   background: #eaeaea;
-   height: 120px;
-   width: 120px;
-   box-shadow:
-           #eaeaea 130px -30px 0 -10px,
-           #eaeaea 50px -50px,
-           #eaeaea 60px 20px,
-           #eaeaea 120px 30px 0 -20px,
-           #ececec 170px 10px 0 -10px;
- }
+}
 
 
 @keyframes move {
@@ -424,17 +410,6 @@ body {
 
 }
 @media (max-width: 800px) {
-  .cloud{
-    left: 5%;
-    margin-top: 60vw;
-
-  }
-
-  #clouds img{
-    position: absolute;
-    bottom: 0;
-    animation: animate calc(var(--i) * 2s) linear infinite;
-  }
 
   html,body
   {

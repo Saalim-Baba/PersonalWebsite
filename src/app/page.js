@@ -102,7 +102,7 @@ const HomePage = () => {
                     <Projects/>
                 </div>
             </div>
-            <div id="hobbys" className=" hidden_raw">
+            <div id="hobbys" className="hidden_raw">
                 <div className="cloud">
                     <h1 className="text-[1vw] stack-cool z-0 absolute left-[-25%]">
                         HOBBYS

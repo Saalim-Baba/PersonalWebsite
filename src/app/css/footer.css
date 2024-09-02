@@ -96,17 +96,16 @@ Card that has icons on it for contacts
         height: 150vh;
     }
     #self_image{
-        transform: translateX(50%);
-        left: -25%
+        transform: translateX(-50%);
+        left: 50%
     }
 }
 @media (max-width: 710px) {
     #contact_info{
         position: absolute;
-        -ms-transform: translateY(-50%);
-        transform: translateY(-50%);
-        left: 25%;
-        margin-bottom: 50vh;
+        transform: translateX(-50%);
+        left: 50%;
+        margin-bottom: 60vh;
     }
     .grass_container{
         display: flex;
@@ -114,7 +113,7 @@ Card that has icons on it for contacts
     }
     #self_image{
         justify-content: center;
-        transform: translateX(50%);
-        left: -50%
+        transform: translateX(-50%);
+        left: 50%
     }
 }
