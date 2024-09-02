@@ -13,7 +13,7 @@ import Grass from "../components/Grass"
 import Blob from "../components/Blob"
 import Projects from "../components/Projects"
 import Hobbys from "../components/Hobbys"
-
+import Carousel from "../components/Carousel"
 
 const HomePage = () => {
     useEffect(() => {
@@ -73,7 +73,6 @@ const HomePage = () => {
     return (
         <>
             <body>
-            <Loader/>
             <div id="image-top" className="flex flex-col justify-center mb-32 ">
                 <Nav/>
                 <Image
@@ -90,6 +89,7 @@ const HomePage = () => {
                 <div className='cloud'>
                     <h1 className="text-black absolute stack-cool">STACK</h1>
                 </div>
+                    <Carousel/>
                     <Box/>
             </div>
             <div id="projects" className="">

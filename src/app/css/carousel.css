@@ -1,0 +1,43 @@
+.lang_card{
+    background-color: white;
+    width: 100%;
+    right: 50%;
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+    transition: 0.3s;
+    border-radius: 5px;
+    padding: 3vw;
+}
+
+.lang_card > img{
+    height: 40vw;
+    justify-content: center;
+    text-align: center;
+}
+
+.lang_card > h2{
+    font-size: 20px;
+}
+
+.first{
+    grid-column: 1;
+    column-width: 200px;
+}
+.second{
+    grid-column: 2;
+}
+.last{
+    grid-column: 3;
+    column-width: 20px;
+}
+
+.griddy{
+    height: 400px;
+    grid-template-columns: auto 60vw auto;
+    margin-top: 100px;
+}
+
+@media (min-width:800px){
+    .griddy{
+        display: none;
+    }
+}
