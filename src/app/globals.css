@@ -264,11 +264,9 @@ body {
 
 }.cloud {
    margin-top: 30vw;
-   animation: move 6s ease infinite;
    border-radius: 50%;
    position: relative;
    left: 10%;
-   transform: translateY(-50%);
    background: #eaeaea;
    height: 120px;
    width: 120px;

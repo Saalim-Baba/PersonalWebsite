@@ -4,7 +4,7 @@ import Image from "next/image";
 
 export default function Grass(){
     return <>
-        <div className="grass_container">
+        <div className="grass_container relative">
             <div className="grass text-center ml-[-20vw] h-[40vh] w-[200%]" style={{"--gust": 40}}></div>
             <div className="grass text-center ml-[-100vw] h-[30vh] w-[200%]" style={{"--gust": 30}}></div>
             <div className="grass text-center ml-[-2vw] h-[15vh] w-[200%]" style={{"--gust": 15}}></div>
@@ -13,11 +13,10 @@ export default function Grass(){
                 <a href={"mailto: Saalim.Baba@outook.com"} target="_blank"><Image src={"/icons/email.png"}  height={90} width={90} alt={"email"}/></a>
                 <a href={"https://github.com/Saalim-Baba"} target="_blank"><Image src={"/icons/github.png"}  height={90} width={90} alt={"github"} className="mt-3"/></a>
             </div>
-            <Image src="/cartoon.png" alt={"me as a cartoon"} width={600} height={600} className="absolute bottom-10 right-10 z-10 pointer-events-none"/>
+            <Image src="/cartoon.png" alt={"me as a cartoon"} id={"self_image"} width={600} height={600} className="absolute bottom-10 right-10 z-10 pointer-events-none"/>
             <div className="soil">
                 <div className="rocks"></div>
                 <h1 className="text-white font-bold">{"> Made in 2024 <"}</h1>
-
                 <div className="links">
                 </div>
             </div>

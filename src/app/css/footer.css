@@ -64,7 +64,6 @@ Card that has icons on it for contacts
     background-color: rgba(255, 255, 255, 0.4);
     border: dashed darkgreen 5px;
     bottom: 15vw;
-    left: 10vw;
     position: absolute;
     z-index: 100;
     justify-content: center;
@@ -80,22 +79,42 @@ Card that has icons on it for contacts
 #contact_info > a:hover{
     transform: scale(110%);
 }
+@media (min-width: 1050px){
+    #contact_info{
+        left: 20%;
+    }
+}
 @media (max-width: 1050px) {
     #contact_info{
+        position: absolute;
+        -ms-transform: translateY(-50%);
+        transform: translateX(-50%);
+        left: 50%;
         margin-bottom: 70vh;
-        justify-content: center;
     }
     .grass_container{
         height: 150vh;
+    }
+    #self_image{
+        transform: translateX(50%);
+        left: -25%
     }
 }
 @media (max-width: 710px) {
     #contact_info{
-        margin-bottom: 70vh;
-        justify-content: center;
+        position: absolute;
+        -ms-transform: translateY(-50%);
+        transform: translateY(-50%);
+        left: 25%;
+        margin-bottom: 50vh;
     }
     .grass_container{
         display: flex;
         height: 150vh;
+    }
+    #self_image{
+        justify-content: center;
+        transform: translateX(50%);
+        left: -50%
     }
 }

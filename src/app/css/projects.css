@@ -61,9 +61,9 @@
     }
 
     #projects > div > h1{
-        font-size: 13vw;
-        left: 12px;
-        top: 30px;
+        font-size: 10vw;
+        left: -15%;
+        top: 15%;
     }
 }
 
@@ -85,4 +85,8 @@
 #projects{
     background: linear-gradient(white, white, #7ac3de, #7ac3de, #7ac3de, white , white );
 }
-
+#projects > .cloud{
+    -ms-transform: translateY(-50%);
+    transform: translateY(-50%);
+    left: 25%;
+}
