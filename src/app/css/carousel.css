@@ -21,6 +21,7 @@
 .first{
     grid-column: 1;
     column-width: 200px;
+    color: black;
 }
 .second{
     grid-column: 2;
@@ -28,6 +29,7 @@
 .last{
     grid-column: 3;
     column-width: 20px;
+    color: black;
 }
 
 .griddy{
