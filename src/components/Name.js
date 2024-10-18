@@ -23,14 +23,14 @@ export default function Name() {
         <div className="relative text-center">
             <div className="absolute inset-0 flex items-center justify-center pointer-events-none">
                 <span
-                    className="text-[20vh] text-black uppercase opacity-10 select-none"
+                    ref={textRef}
+                    className="text-[10vh] md:text-[20vh] text-black uppercase opacity-10 select-none"
                     style={{ fontFamily: 'Arial Black, sans-serif' }}
                 >
                     SAALIM BABA
                 </span>
             </div>
             <h1
-                ref={textRef}
                 id="Name"
                 className="relative text-[6vh] text-white hidden_raw"
             >

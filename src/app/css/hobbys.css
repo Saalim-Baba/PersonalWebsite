@@ -66,13 +66,23 @@
     box-shadow: -10px 10px 10px #66a3b9;
     background-size: cover;
 }
+@media (hover: hover) {
+    .thd_card:hover .front {
+        transform: rotateY(-180deg) rotateX(0deg);
+        transition-duration: 1.2s;
+    }
 
-.thd_card:hover .front {
+    .thd_card:hover .back {
+        transform: rotateY(0deg) rotateX(0deg);
+        transition-duration: 1.2s;
+    }
+}
+.thd_card.flipped .front {
     transform: rotateY(-180deg) rotateX(0deg);
     transition-duration: 1.2s;
 }
 
-.thd_card:hover .back {
+.thd_card.flipped .back {
     transform: rotateY(0deg) rotateX(0deg);
     transition-duration: 1.2s;
 }
@@ -134,4 +144,3 @@
     }
 
 }
-
