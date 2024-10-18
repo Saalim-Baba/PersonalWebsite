@@ -9,9 +9,6 @@ export default function Hobbys(){
         { name: "Technical"},
         { name: "Skisport"},
     ];
-
-
-
     return (
         <>
         <div className="hobby-container w-full grid grid-cols-4 auto-rows-auto gap-y-3 gap-x-4 p-20 ">

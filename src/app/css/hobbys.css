@@ -111,12 +111,6 @@
         place-items: center;
 
     }
-    .hobby:nth-child(odd){
-        margin-left: 50px;
-    }
-    .hobby:nth-child(even){
-        margin-right: 100px;
-    }
     #hobbys{
         height: 200vh;
     }
