@@ -1,6 +1,6 @@
 import "../app/css/carousel.css";
 import data from "../app/languages.json";
-import React, {useEffect, useState} from "react";
+import React, {useState} from "react";
 function Carousel() {
     const [index, setIndex] = useState(0);
 

@@ -74,7 +74,7 @@ const HomePage = () => {
     return (
         <>
             <body>
-            <div id="image-top" className="flex flex-col justify-center mb-32 ">
+            <div id="image-top" className="flex flex-col justify-center ">
                 <Nav/>
                 <Image
                     src="/sun.png"
@@ -86,7 +86,7 @@ const HomePage = () => {
                 <Name/>
                 <Clouds/>
             </div>
-            <div id="stack" className="mt-36 hidden_raw">
+            <div id="stack" className="hidden_raw">
                 <div className='cloud'>
                     <h1 className="text-black absolute stack-cool">STACK</h1>
                 </div>

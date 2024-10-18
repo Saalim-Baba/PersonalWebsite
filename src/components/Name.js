@@ -20,8 +20,22 @@ export default function Name() {
     }, []);
 
     return (
-        <h1 ref={textRef} id={"Name"} className="text-center text-[6vh] text-white mb-40 hidden_raw">
-            Saalim Baba
-        </h1>
+        <div className="relative text-center">
+            <div className="absolute inset-0 flex items-center justify-center pointer-events-none">
+                <span
+                    className="text-[20vh] text-black uppercase opacity-10 select-none"
+                    style={{ fontFamily: 'Arial Black, sans-serif' }}
+                >
+                    SAALIM BABA
+                </span>
+            </div>
+            <h1
+                ref={textRef}
+                id="Name"
+                className="relative text-[6vh] text-white hidden_raw"
+            >
+                Portfolio Page <br />
+            </h1>
+        </div>
     );
 }
